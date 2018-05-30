@@ -1,0 +1,49 @@
+
+body, html {
+  padding:0;
+  margin:0;
+}
+
+#main-container {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  padding:0;
+  margin:0;
+}
+
+#main-background .carousel-item {
+   background-size: cover;
+   background-position: center;
+   width: 100vw;
+   height: 100vh;
+}
+
+#logo {
+  position:absolute;
+  width:34%;
+  left:50%;
+  top:85%;
+  transform: translate(-50%,-50%);
+  z-index: 1;
+}
+
+#freccia {
+  position:absolute;
+  bottom:0;
+}
+
+
+h1 {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  font-family: 'Yesteryear', cursive;
+  color:#7f7f7f;
+  font-size: 60px;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 20px;
+}
