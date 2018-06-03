@@ -37,7 +37,7 @@ global $lang;
     <img id="logo" src="logo/Mamma Lucia Logo_bianco web.png" />
   </div>
   <div id="freccia">
-    <a href="#h1"><img src="freccia.jpg"/></a>
+    <a class="animated-scroll" href="#h1"><img src="freccia.jpg"/></a>
   </div>
   <div class="container-fluid">
     <div class="row justify-content-center">
@@ -56,14 +56,36 @@ global $lang;
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
   <script>
-    $(document).ready(function (){
-      $("#freccia").click(function (){
-        $('html, body').animate({
-          scrollTop: $("#h1").offset().top
-        }, 2000);
+    // Use jQuery instead of $ because it might not be defined yet.
+    jQuery(document).ready(function ($){
+      // Target the <a> element child of #freccia
+      $("a.animated-scroll").click(function (clickEvent){
+        // Log a message for debug.
+        console.log("Click on .animated-scroll!");
+        // Print out the cliecked element for debug.
+        console.log(this);
+        // Print out the "event" object for debug
+        console.log(clickEvent);
+
+        // Important: This prevents the "click" event to have any other effect
+        clickEvent.preventDefault();
+
+        // Get the destination based on the `href` parameter of the link
+        var destinationSelector = $(this).attr('href');
+        // Print out for debug
+        console.log("Scroll to: " + destinationSelector);
+
+        // Load the jQuery object for scroll destination
+        var $scrollDest = $(destinationSelector);
+        // Animate the scroll if the destination exists (and it's visible)
+        if ($scrollDest.length > 0 && $scrollDest.is(':visible')) {
+          $("html, body").animate({
+            scrollTop: $scrollDest.offset().top
+          }, 2000);
+        }
+
       });
     });
     </script>
-
   </body>
   </html>
