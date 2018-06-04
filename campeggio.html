@@ -5,65 +5,87 @@ global $lang;
 ?> -->
 <!DOCTYPE html>
 <html lang="<?=$lang?>">
-  <head>
+<head>
 
-    <!-- Required meta tags -->
+  <!-- Required meta tags -->
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
+  <!-- Bootstrap CSS -->
 
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="campeggio.css">
-    <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="campeggio.css">
+  <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Yesteryear" rel="stylesheet">
 
-    <title>Campeggio</title>
+  <title>Campeggio</title>
 
-  </head>
-  <body>
-    <main id="main-container" class="container-fluid">
-      <div id="main-background" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000" data-pause="false">
-        <div class="carousel-inner">
-          <div class="carousel-item active" style="background-image:url('images/Mamma Lucia 2016 - IDS_5966.jpg')"></div>
-          <div class="carousel-item" style="background-image:url('images/Mamma Lucia 2016 - IDS_5976.jpg')"></div>
-          <div class="carousel-item" style="background-image:url('images/Mamma Lucia 2016 - IDS_5985.jpg')"></div>
-          <div class="carousel-item" style="background-image:url('images/Mamma Lucia 2016 - IDS_7033.jpg')"></div>
-        </div>
+</head>
+<body>
+  <main id="main-container" class="container-fluid">
+    <div id="main-background" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000" data-pause="false">
+      <div class="carousel-inner">
+        <div class="carousel-item active" style="background-image:url('images/Mamma Lucia 2016 - IDS_5966.jpg')"></div>
+        <div class="carousel-item" style="background-image:url('images/Mamma Lucia 2016 - IDS_5976.jpg')"></div>
+        <div class="carousel-item" style="background-image:url('images/Mamma Lucia 2016 - IDS_5985.jpg')"></div>
+        <div class="carousel-item" style="background-image:url('images/Mamma Lucia 2016 - IDS_7033.jpg')"></div>
       </div>
-    </main>
-    <div>
-      <img id="logo" src="logo/Mamma Lucia Logo_bianco web.png" />
     </div>
-    <div id="freccia">
-    <a href="#h1"><img src="freccia.jpg"/></a>
-   </div>
-    <div class="container-fluid">
-     <div class="row justify-content-center">
+  </main>
+  <div>
+    <img id="logo" src="logo/Mamma Lucia Logo_bianco web.png" />
+  </div>
+  <div id="freccia">
+    <a class="animated-scroll" href="#h1"><img src="freccia.jpg"/></a>
+  </div>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
       <div class="col-md-10">
         <h1 id="h1" class="text-center">Camping</h1>
-         <p class="text-center">Il Camping Mamma Lucia è situato nel verde della natura di San Zeno di Montagna, a ridosso delle pendici del Monte Baldo.</p>
-         <p class="text-center">La superficie praticabile si estende per oltre 32.000 mq e la nostra struttura comprende 180 piazzole, tutte dotate di allacciamento elettrico e idrico, per garantire il massimo del comfort.</p>
+        <p class="text-center">Il Camping Mamma Lucia è situato nel verde della natura di San Zeno di Montagna, a ridosso delle pendici del Monte Baldo.</p>
+        <p class="text-center">La superficie praticabile si estende per oltre 32.000 mq e la nostra struttura comprende 180 piazzole, tutte dotate di allacciamento elettrico e idrico, per garantire il massimo del comfort.</p>
       </div>
-     </div>
     </div>
-
-    <script>
-        $(document).ready(function (){
-            $("#freccia").click(function (){
-                $('html, body').animate({
-                    scrollTop: $("#h1").offset().top
-                }, 2000);
-            });
-        });
-    </script>
+  </div>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
+  <script>
+    // Use jQuery instead of $ because it might not be defined yet.
+    jQuery(document).ready(function ($){
+      // Target the <a> element child of #freccia
+      $("a.animated-scroll").click(function (clickEvent){
+        // Log a message for debug.
+        console.log("Click on .animated-scroll!");
+        // Print out the cliecked element for debug.
+        console.log(this);
+        // Print out the "event" object for debug
+        console.log(clickEvent);
+
+        // Important: This prevents the "click" event to have any other effect
+        clickEvent.preventDefault();
+
+        // Get the destination based on the `href` parameter of the link
+        var destinationSelector = $(this).attr('href');
+        // Print out for debug
+        console.log("Scroll to: " + destinationSelector);
+
+        // Load the jQuery object for scroll destination
+        var $scrollDest = $(destinationSelector);
+        // Animate the scroll if the destination exists (and it's visible)
+        if ($scrollDest.length > 0 && $scrollDest.is(':visible')) {
+          $("html, body").animate({
+            scrollTop: $scrollDest.offset().top
+          }, 2000);
+        }
+
+      });
+    });
+    </script>
   </body>
-</html>
+  </html>
