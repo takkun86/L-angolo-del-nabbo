@@ -1,0 +1,202 @@
+<!-- <?php
+require_once 'language.php';
+language_init();
+global $lang;
+?> -->
+<!DOCTYPE html>
+<html lang="<?=$lang?>">
+  <head>
+    <!-- Required meta tags -->
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="lacasuldos.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>La ca' sul dos</title>
+
+  </head>
+  <body>
+    <div class="container-fluid nav">
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">HOME</a>
+        <div id="vline"></div>
+        <a id="apartment" href="#apartment">APARTMENT</a>
+        <div id="vline"></div>
+        <a href="#prices">PRICES</a>
+        <div id="vline"></div>
+        <a href="#contact">CONTACT</a>
+        <div id="lcsd"></div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()"></li>
+          <img class="nlogo" src="logo/La Ca sul Dos - Nav Bar Logo.svg"/>
+        </a>
+      </div>
+    </div>
+    <main id="main-container" class="container-fluid">
+      <div id="main-background" class="carousel slide carousel-fade" data-ride="carousel" data-interval="10000" data-pause="false">
+        <div class="carousel-inner">
+          <div class="carousel-item active" style="background-image:url('images/Ca sul Dos 2016 - DJI_0355.jpg')"></div>
+          <div class="carousel-item" style="background-image:url('images/Ca sul Dos 2016 - IDS_6769.jpg')"></div>
+          <div class="carousel-item" style="background-image:url('images/Ca sul Dos 2016 - IDS_6774.jpg')"></div>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+     <div class="row">
+       <div class="col-md-12 logo">
+         <img class="logocenter" src="logo/La Ca sul Dos - Studio Logo_rid.png" />
+         <p id="dlogo">The "Ca' Sul Dos" is located on a hill overlooking Lake Garda, surrounded by a 2500 square meter olive grove and with a garden that enjoys a fantastic panoramic view of the lake and Malcesine.</p>
+       </div>
+     </div>
+    </div>
+    <div class="container-fluid round">
+      <div class="row justify-content-center">
+        <div class="col-xs">
+          <img class="rounded-circle" src="images/501.jpg" style="width:100%">
+        </div>
+      </div>
+    </div>
+    <div class="container desc">
+     <div class="row">
+       <div class="desc">
+        <h1 id="pad1">THE APARTMENT</h1>
+        <p id="pad2">he 45 sq.m. apartment has a terrace overlooking the lake, private parking, air conditioning, Wi-Fi, linens, towels, dishwasher, washing machine, microwave, induction cooktop, Melitta coffeemaker, heating, mosquito screens on the windows, as well as deck chairs and a grill in the garden. We also make our own olive oil, which is available for purchase.</p>
+        <h2 id="pad3">PHOTOS OF THE APARTMENT AND THE GARDEN<h2>
+       </div>
+     </div>
+    </div>
+    <div id="slide" class="carousel slide carousel-fade " data-ride="carousel">
+       <div class="carousel-inner">
+       <div class="carousel-item active" style="background-image:url('images/La Ca sul Dos 2017 - IDS_2823.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/Ca sul Dos 2018 - IDS_8822.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/Ca sul Dos 2018 - IDS_8817.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/La Ca sul Dos 2017 - IDS_2836.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/La Ca sul Dos 2017 - IDS_2812.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/La Ca sul Dos 2017 - IDS_2529.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/La Ca sul Dos 2017 - IDS_2538.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/Malcesine - IMG_0063.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/La Ca sul Dos 2018 - IDS_8517.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/malcesine1919.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/malcesine 2015 ids_1892.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/fiori di primavera - ids_3650.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/peonie - ids_1382.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/ids_1196.jpg')"></div>
+       <div class="carousel-item" style="background-image:url('images/malcesine - idx_2087.jpg')"></div>
+       <a class="carousel-control-prev" href="#slide" data-slide="prev">
+       <span class="carousel-control-prev-icon"></span>
+       </a>
+       <a class="carousel-control-next" href="#slide" data-slide="next">
+       <span class="carousel-control-next-icon"></span>
+       </a>
+       </div>
+    </div>
+    <div class="container desc">
+     <div class="row">
+        <div class="desc">
+          <h1 id="pad4">GREEN BUILDING FOR A HEALTHY VISIT</h1>
+          <p id="pad5">We built the house with exposed stone and other natural materials, just as it is done in the local countryside. Inside, we used mainly clay and raw earth. Both these materials are totally recyclable, environmentally friendly, naturally prevent the formation of allergy-causing molds, regulate room humidity, and have the ability to limit dust and odors in the air, thus maintaining a healthy environment. Even the wall heating is made with clay panels. For the walls, we chose stone, lime, wood, and hemp as an insulator, which also respects the modern anti-seismic requirements.</p>
+        </div>
+     </div>
+    </div>
+    <div class="container-fluid descb">
+     <div class="row">
+        <div class="descb">
+          <div id="bbottom">
+            <h1 id="pad6">PRICE LIST</h1>
+          </div>
+          <p id="pad7">Apartment for up to 2 people.<br>Prices per apartment start from €85 per night.<br>Excluding a tourist tax of €1 per day, per person.<br>Extra charge for final cleaning.</p>
+        </div>
+     </div>
+    </div>
+    <div class"container-fluid vista">
+     <div class="row justify-content-center">
+       <div class"col-sm-12">
+         <div class="imm"></div>
+       </div>
+    </div>
+   </div>
+   <div class="container desc">
+    <div class="row">
+       <div class="desc">
+         <h1 id="pad4">LOCATION</h1>
+         <p id="pad5">We are about 1 km and 200 meters from the city center, and a 15-minute walk takes you to the lakefront where you can enjoy long strolls along the lake. Otherwise, you can take the paths through the woods to reach the peaks of the nearby mountains, take advantage of the bicycle path, or visit the surfing & sailing school in Val di Sogno. We are about 2 km away from the cable car station.</p>
+       </div>
+    </div>
+   </div>
+   <div class="container-fluid footer">
+    <div class="row">
+      <div class="footer">
+        <div id="bbottom">
+          <h1 id="pad8">CONTACTS</h1>
+        </div>
+          <p id="pfooter">Address:<br>Via Dos del Pis, 10<br>37018 - Malcesine VR</p>
+          <p id="tel">Tel. +39  388 6237933</p>
+      </div>
+    </div>
+  </div>
+  <div class="btn-group dropup">
+  <button id="button1" type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+    Dropup
+  </button>
+    <form class="dropdown-menu" id="form">
+      <div class="row justify-content-center">
+        <div id="firstname" class="col-xs-3">
+          <input type="text" class="form-control" placeholder="First name">
+        </div>
+        <div id="lastname" class="col-xs-3">
+          <input type="text" class="form-control" placeholder="Last name">
+        </div>
+        <div class="w-100"></div>
+        <div class="col-xs-4">
+          <input type="text" class="form-control" placeholder="phone">
+        </div>
+      </div>
+      <div class="form-group textarea">
+        <textarea class="form-control" id="textarea" rows="7"></textarea>
+      </div>
+      <div class="form-group agreeform">
+        <div class="form-check">
+          <input class="form-check-input is-invalid" type="checkbox" value="" id="invalidCheck3" required>
+          <label id="agree" class="form-check-label" for="invalidCheck3">
+            Agree privacy
+          </label>
+          <div id="must" class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+      <div class="submitb">
+      <button class="submitb" type="submit">Submit</button>
+      </div>
+    </form>
+
+  </div>
+</div>
+</div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+      <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+              x.className += "responsive";
+          } else {
+              x.className = "topnav";
+          }
+      }
+      </script>
+
+  </body>
+</html>
